@@ -1,5 +1,4 @@
 /* сброс стилей браузера */
-
 * { box-sizing: border-box; }
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
@@ -38,3 +37,114 @@ q:before, q:after {
     content: none;
 }
 /* конец кода сброса стилей браузера */
+/* шрифты старт */
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url('/fonts/OpenSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'MullerRegular';
+    src: url('/fonts/MullerRegular.otf');
+}
+/* шрифты конец */
+/* хэдер старт */
+.header-wrapper.container-fluid{
+    display: flex;
+    max-width: 1400px;
+    background-color: #454545;
+    color: #ffffff;
+    width: 100%;
+    height: 93px;
+}
+.header.container{
+    display: flex;
+}
+.header__logo {
+    display: flex;
+    padding-top: 1.7rem;
+}
+.header__logo__img {
+    background: url(/img/logo__main.png) center center / 100% no-repeat;
+    width: 188px;
+    height: 41px;
+    margin-right: 18px;
+}
+.header__logo__line {
+    background-color: #d74b4b;
+    width: 2px;
+    height: 37px;
+    margin-right: 19px;
+}
+.header__logo__text {
+    width: 11rem;
+    /* height: 45px; */
+    /* margin-right: 5.7rem;*/
+ }
+.header__logo__text p {
+     text-transform: uppercase;
+     font-family: OpenSans-Regular;
+     font-size: .9em;
+     transform: translateY(-.5em);
+ }
+.header__search-wrapper {
+     width: 93px;
+     height: 93px;
+ }
+.header__search {
+    background: url(/img/search.png) no-repeat center center / 22%, linear-gradient(to top, #dd9b07, #fbc024);
+}
+.header__search:hover {
+     /*width: 93px;
+     height: 93px;
+     background: url(/img/search.png) no-repeat center center / 22% red;
+ */}
+.header__address {
+    background: url(/img/place.png) no-repeat 1rem center / 5%;
+    padding-left: 2rem;
+    padding-top: 1.7rem;
+    font-family: OpenSans-Regular;
+    font-size: .9em;
+}
+.header__contacts {
+    background: url(/img/phone.png) no-repeat left 1em / 11%, url(/img/watsup.png) no-repeat left 3.4em/ 11%;
+    font-family: OpenSans-SemiBold;
+    font-size: .9em;
+}
+.header__contacts p {
+    padding-left: .7em;
+}
+.header__contacts p:nth-of-type(1){
+    padding-top: 1rem;
+}
+.header__feedback-wrapper {
+    padding-top: 1rem;
+}
+
+.header__feedback {
+    background: url(/img/mail__header.png) no-repeat 1rem center / 18%, linear-gradient(to top, #dd9b07, #fbc024);
+    color: #000000;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 4px;
+}
+.header__feedback p {
+    padding-left: 4rem;
+}
+.header__feedback p:nth-of-type(1) {
+    padding-top: .8rem;
+    font-family: MullerRegular;
+    font-size: .9em;
+}
+.header__feedback p:nth-of-type(2) {
+    font-family: OpenSans-Regular;
+}
+
+.header__gamburger {
+    background: url(/img/burger.png) no-repeat center center / 39px 34px;
+    width: 39px;
+}
+/* хэдер конец */
