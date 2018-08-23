@@ -54,30 +54,35 @@ q:before, q:after {
 /* хэдер старт */
 .header-wrapper.container-fluid{
     display: flex;
-    max-width: 1400px;
+    flex-wrap: nowrap;
+    max-width: 1300px;
     background-color: #454545;
     color: #ffffff;
     width: 100%;
-    height: 93px;
+    height: 70px;
+}
+.header-row{
+    width: 1300px;
 }
 .header.container{
     display: flex;
 }
 .header__logo {
     display: flex;
-    padding-top: 1.7rem;
+    padding-top: 1.4rem;
+    margin-right: -45px;
 }
 .header__logo__img {
     background: url(/img/logo__main.png) center center / 100% no-repeat;
-    width: 188px;
-    height: 41px;
-    margin-right: 18px;
+    width: 143px;
+    height: 31px;
+    margin-right: 13px;
 }
 .header__logo__line {
     background-color: #d74b4b;
     width: 2px;
-    height: 37px;
-    margin-right: 19px;
+    height: 28px;
+    margin-right: 15px;
 }
 .header__logo__text {
     width: 11rem;
@@ -85,66 +90,88 @@ q:before, q:after {
     /* margin-right: 5.7rem;*/
  }
 .header__logo__text p {
-     text-transform: uppercase;
-     font-family: OpenSans-Regular;
-     font-size: .9em;
-     transform: translateY(-.5em);
- }
+    text-transform: uppercase;
+    font-family: OpenSans-Regular;
+    font-size: .7em;
+    transform: translateY(-.5em);
+}
 .header__search-wrapper {
-     width: 93px;
-     height: 93px;
- }
+    width: 70px;
+    height: 70px;
+}
 .header__search {
     background: url(/img/search.png) no-repeat center center / 22%, linear-gradient(to top, #dd9b07, #fbc024);
+    width: 70px;
+    height: 70px;
 }
 .header__search:hover {
      /*width: 93px;
      height: 93px;
      background: url(/img/search.png) no-repeat center center / 22% red;
  */}
+.header__address-wrapper{
+    width: 145px;
+    height: 30px;
+}
 .header__address {
-    background: url(/img/place.png) no-repeat 1rem center / 5%;
-    padding-left: 2rem;
-    padding-top: 1.7rem;
+    background: url(/img/place.png) no-repeat 0rem 1.4rem / 9%;
+    /* padding-left: 2rem; */
+    padding-top: 1.2rem;
     font-family: OpenSans-Regular;
-    font-size: .9em;
+    font-size: .7em;
+    margin-left: 57px;
+}
+.header__address p {
+    text-align: left;
+    padding-left: 1rem;
+}
+.header__contacts-wrapper{
+    width: 125px;
+    height: 50px;
+    margin-right: 10px;
 }
 .header__contacts {
-    background: url(/img/phone.png) no-repeat left 1em / 11%, url(/img/watsup.png) no-repeat left 3.4em/ 11%;
+    background: url(/img/phone.png) no-repeat left 1.6em / 9%, url(/img/watsup.png) no-repeat left 3.7em/ 9%;
     font-family: OpenSans-SemiBold;
-    font-size: .9em;
+    font-size: .7em;
+    /* margin-left: 30px; */
+    height: 61px;
 }
 .header__contacts p {
-    padding-left: .7em;
+    padding-left: 2.2em;
 }
-.header__contacts p:nth-of-type(1){
-    padding-top: 1rem;
+.header__contacts p:nth-of-type(1) {
+    padding-top: 13px;
+}
+.header__contacts p:nth-of-type(3) {
+    padding-top: 5px;
 }
 .header__feedback-wrapper {
-    padding-top: 1rem;
+    padding-top: 7px;
 }
-
 .header__feedback {
-    background: url(/img/mail__header.png) no-repeat 1rem center / 18%, linear-gradient(to top, #dd9b07, #fbc024);
+    background: url(/img/mail__header.png) no-repeat 1.3rem center / 18%, linear-gradient(to top, #dd9b07, #fbc024);
     color: #000000;
-    width: 13rem;
-    height: 4rem;
     border-radius: 4px;
+    width: 196px;
+    height: 56px;
 }
 .header__feedback p {
-    padding-left: 4rem;
+    padding-left: 4.5rem;
 }
 .header__feedback p:nth-of-type(1) {
-    padding-top: .8rem;
+    padding-top: 1rem;
     font-family: MullerRegular;
-    font-size: .9em;
+    font-size: .7em;
 }
 .header__feedback p:nth-of-type(2) {
     font-family: OpenSans-Regular;
+    font-size: .7em;
 }
 
 .header__gamburger {
     background: url(/img/burger.png) no-repeat center center / 39px 34px;
     width: 39px;
+    margin-left: 20px;
 }
 /* хэдер конец */
