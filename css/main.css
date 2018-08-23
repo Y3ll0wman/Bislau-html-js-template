@@ -37,6 +37,11 @@ q:before, q:after {
     content: none;
 }
 /* конец кода сброса стилей браузера */
+/* общие стили старт */
+body {
+    background-color: #f4f8fa;
+}
+/* общие стили конец */
 /* шрифты старт */
 @font-face {
     font-family: 'OpenSans-Regular';
@@ -45,6 +50,10 @@ q:before, q:after {
 @font-face {
     font-family: 'OpenSans-SemiBold';
     src: url('/fonts/OpenSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('/fonts/OpenSans-Bold.ttf');
 }
 @font-face {
     font-family: 'MullerRegular';
@@ -172,6 +181,73 @@ q:before, q:after {
     margin-left: 20px;
 }
 /* хэдер конец */
+/* доверие клиентов старт */
+.confidence.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.confidence__H1 {
+    text-transform: uppercase;
+    font-family: OpenSans-SemiBold;
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+.confidence__line {
+    width: 44px;
+    height: 3px;
+    background-color: #d74b4b;
+    margin-bottom: 1rem;
+}
+.confidence__icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+.confidence__icons__item1{
+    background: url(/img/client-logo1.png) no-repeat center center / 100%;
+    height: 100px;
+    width: 100%;
+}
+.confidence__icons__item2{
+    background: url(/img/client-logo2.png) no-repeat center center / 100%;
+    height: 100px;
+    width: 100%;
+}
+.confidence__icons__item3{
+    background: url(/img/client-logo3.png) no-repeat center center / 100%;
+    height: 100px;
+    width: 100%;
+}
+.confidence__icons__item4{
+    background: url(/img/client-logo4.png) no-repeat center center / 100%;
+    height: 100px;
+    width: 100%;
+}
+.confidence__icons__item5{
+    background: url(/img/client-logo5.png) no-repeat center center / 100%;
+    height: 100px;
+    width: 100%;
+}
+.confidence__nav.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.confidence__nav div:nth-of-type(1) {
+    background: url(/img/confidence-nav1.png) no-repeat center center;
+    height: 19px;
+    width: 12px;
+    padding-right: 3rem;
+}
+.confidence__nav div:nth-of-type(2) {
+    background: url(/img/confidence-nav2.png) no-repeat center center;
+    height: 19px;
+    width: 12px;
+    padding-left: 3rem;
+}
+/* доверие клиентов конец */
 /* карта старт */
 .map__top-border.row {
     height: 4px;
