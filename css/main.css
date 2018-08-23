@@ -181,6 +181,88 @@ body {
     margin-left: 20px;
 }
 /* хэдер конец */
+/* о компании старт */
+.aboutUs.container {
+    background-color: #ffffff;
+    width: 66rem;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
+    margin-bottom: 2rem;
+}
+.aboutUs__H1-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutUs__H1 {
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-family: OpenSans-SemiBold;
+    font-size: 1.2em;
+}
+.aboutUs__H2 {
+    font-family: OpenSans-SemiBold;
+    font-size: .9em;
+    padding-bottom: .7rem;
+}
+.aboutUs__line{
+    width: 44px;
+    height: 3px;
+    background-color: #d74b4b;
+    margin-bottom: 1rem;
+}
+.aboutUs__icons div:nth-of-type(1), .aboutUs__icons div:nth-of-type(2), .aboutUs__icons div:nth-of-type(3) {
+    margin-right: 3rem;
+}
+.aboutUs__icons.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-family: OpenSans-Regular;
+    font-size: .8em;
+}
+.aboutUs__text.row span {
+    font-weight: 700;
+}
+.aboutUs__text.row p:nth-of-type(1), p:nth-of-type(3) {
+    padding-bottom: 1rem;
+}
+.aboutUs__text.row p:nth-of-type(7) {
+    padding-bottom: 3rem;
+}
+.aboutUs__icons__item1, .aboutUs__icons__item2, .aboutUs__icons__item3, .aboutUs__icons__item4 p {
+    text-align: left;
+    padding-left: 3.6rem;
+}
+.aboutUs__icons__item1, .aboutUs__icons__item2, .aboutUs__icons__item3, .aboutUs__icons__item4{
+    width: 11rem;
+}
+.aboutUs__icons__item1{
+    background: url(/img/aboutUs-icon1.png) no-repeat left center;
+    height: 50px;
+}
+.aboutUs__icons__item2{
+    background: url(/img/aboutUs-icon2.png) no-repeat left center;
+    height: 50px;
+
+}
+.aboutUs__icons__item3{
+    background: url(/img/aboutUs-icon3.png) no-repeat left center;
+    height: 50px;
+
+}
+.aboutUs__icons__item4{
+    background: url(/img/aboutUs-icon4.png) no-repeat left center;
+    height: 50px;
+
+}
+.aboutUs__text.row {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: .9em;
+    font-family: OpenSans-Regular;
+}
+/* о компании конец */
 /* доверие клиентов старт */
 .confidence.container {
     display: flex;
@@ -190,7 +272,7 @@ body {
 .confidence__H1 {
     text-transform: uppercase;
     font-family: OpenSans-SemiBold;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 1rem;
 }
 .confidence__line {
