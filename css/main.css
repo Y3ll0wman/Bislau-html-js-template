@@ -61,35 +61,33 @@ q:before, q:after {
     width: 100%;
     height: 70px;
 }
-.header-row{
+.header-row, .footer-row{
     width: 1300px;
 }
 .header.container{
     display: flex;
 }
-.header__logo {
+.header__logo, .footer__logo {
     display: flex;
     padding-top: 1.4rem;
     margin-right: -45px;
 }
-.header__logo__img {
+.header__logo__img, .footer__logo__img {
     background: url(/img/logo__main.png) center center / 100% no-repeat;
     width: 143px;
     height: 31px;
     margin-right: 13px;
 }
-.header__logo__line {
+.header__logo__line, .footer__logo__line {
     background-color: #d74b4b;
     width: 2px;
     height: 28px;
     margin-right: 15px;
 }
-.header__logo__text {
+.header__logo__text, .footer__logo__text {
     width: 11rem;
-    /* height: 45px; */
-    /* margin-right: 5.7rem;*/
- }
-.header__logo__text p {
+}
+.header__logo__text p, .footer__logo__text p {
     text-transform: uppercase;
     font-family: OpenSans-Regular;
     font-size: .7em;
@@ -125,7 +123,7 @@ q:before, q:after {
     text-align: left;
     padding-left: 1rem;
 }
-.header__contacts-wrapper{
+.header__contacts-wrapper {
     width: 125px;
     height: 50px;
     margin-right: 10px;
@@ -134,10 +132,9 @@ q:before, q:after {
     background: url(/img/phone.png) no-repeat left 1.6em / 9%, url(/img/watsup.png) no-repeat left 3.7em/ 9%;
     font-family: OpenSans-SemiBold;
     font-size: .7em;
-    /* margin-left: 30px; */
     height: 61px;
 }
-.header__contacts p {
+.header__contacts p, .footer__contacts p {
     padding-left: 2.2em;
 }
 .header__contacts p:nth-of-type(1) {
@@ -175,3 +172,87 @@ q:before, q:after {
     margin-left: 20px;
 }
 /* хэдер конец */
+/* футер старт */
+.footer.container-fluid {
+    max-width: 1300px;
+    background-color: #454545;
+    color: #ffffff;
+    width: 100%;
+    height: 103px;
+}
+.footer-row {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__nav1 a:hover {
+    color: #D74B4B;
+}
+.footer__nav1 a {
+    color: #ffffff;
+}
+.footer__address-wrapper {
+    width: 184px;
+}
+.footer__contacts {
+    background: url(/img/phone.png) no-repeat left 1.6em / 9%, url(/img/watsup.png) no-repeat left 4.5em/ 9%, url(/img/vk-icon.png) no-repeat 2em 6.5em/ 14%, url(/img/fb-icon.png) no-repeat 5em 6.5em/ 14%, url(/img/inst-icon.png) no-repeat 8em 6.5em/ 14%;
+    font-family: OpenSans-SemiBold;
+    font-size: .7em;
+    height: 103px;
+}
+.footer__address {
+    background: url(/img/place.png) no-repeat 0rem 1.4rem / 8%, url(/img/mail.png) no-repeat -0rem 3.4rem / 13%;
+    padding-top: 1.2rem;
+    font-family: OpenSans-Regular;
+    font-size: .7em;
+    margin-left: 57px;
+    height: 76px;
+}
+.footer__address p:nth-of-type(1) {
+    text-align: left;
+    padding-left: 1rem;
+}
+.footer__address p:nth-of-type(2) {
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.footer__address p:nth-of-type(1) {
+    text-align: left;
+    padding-left: 1.1rem;
+}
+.footer__address p:nth-of-type(2) {
+    text-align: left;
+    padding-top: .4rem;
+    padding-left: 1.2rem;
+}
+.footer__contacts p:nth-of-type(1){
+    padding-top: 17px;
+}
+.footer__contacts p:nth-of-type(3) {
+    padding-top: 8px;
+}
+.footer-row2 {
+    justify-content: space-between;
+    background-color: #303030;
+    font-family: OpenSans-Regular;
+    font-size: .8em;
+}
+.footer-row2 div:nth-of-type(1){
+    padding-left: 14px;
+}
+.footer-row2 div:nth-of-type(2){
+    padding-right: 14px;
+}
+.footer__nav1 {
+    padding-top: 1.5rem;
+    font-family: OpenSans-Regular;
+    font-size: .8em;
+}
+.footer__nav1 a:nth-of-type(1), a:nth-of-type(2) {
+    padding-right: 5rem;
+}
+.footer__contacts-wrapper {
+    padding-left: 2.8rem;
+}
+/* футер конец */
