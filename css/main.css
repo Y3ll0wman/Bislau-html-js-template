@@ -69,7 +69,7 @@ body {
 }
 /* шрифты конец */
 /* хэдер старт */
-.header-wrapper.container {
+.header-wrapper.container-fluid {
     /* display: flex; */
     /* flex-wrap: nowrap; */
     /* max-width: 1300px; */
@@ -81,7 +81,7 @@ body {
 .header-row, .footer-row{
     /*width: 1300px;*/
 }
-.header.container{
+.header.container-fluid{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -202,7 +202,7 @@ body {
 }
 /* хэдер конец */
 /* навигация/табы */
-.content-wrapper.container {
+.content-wrapper.container-fluid {
    margin-bottom: 2rem;
     margin-top: 2rem;
 }
@@ -217,6 +217,24 @@ body {
     font-family: MullerMedium;
     font-size: 1.6em;
     text-transform: uppercase;
+}
+.navigation__tablets__line, .navigation__metalStructures__line {
+    height: 9px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#b01f5b), to(#df4a4a));
+    background: -webkit-linear-gradient(bottom, #b01f5b, #df4a4a);
+    background: -o-linear-gradient(bottom, #b01f5b, #df4a4a);
+    background: linear-gradient(to top, #b01f5b, #df4a4a);
+    position: absolute;
+    width: 31.3rem;
+}
+.navigation__tablets__line{
+    top: 9rem;
+    left: 1rem;
+}
+.navigation__metalStructures__line{
+    top: 9rem;
+    left: 0rem;
+    display: none;
 }
 .cards-btn {
     background: -webkit-gradient(linear, left bottom, left top, from(#ae2364), to(#db4d53));
@@ -408,6 +426,7 @@ body {
     background: url(/img/tablets-nav.png) no-repeat 1rem 1rem/ 95%;
     width: 50%;
     background-color: #ffffff;
+    position: relative;
     -webkit-box-shadow: 0px -4px 3px 2px rgba(0,0,0,.1);
             box-shadow: 0px -4px 3px 2px rgba(0,0,0,.1);
     display: -webkit-box;
@@ -423,6 +442,7 @@ body {
 .navigation__metalStructures {
     background: url(/img/metall-nav.png) no-repeat left 1rem/ 95%;
     width: 50%;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -452,7 +472,7 @@ body {
 }
 /* навигация/табы конец */
 /* о компании старт */
-.aboutUs.container {
+.aboutUs.container-fluid {
     background-color: #ffffff;
     width: 66rem;
     -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
@@ -549,7 +569,7 @@ body {
 }
 /* о компании конец */
 /* доверие клиентов старт */
-.confidence.container {
+.confidence.container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -560,6 +580,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 66rem;
 }
 .confidence__H1 {
     text-transform: uppercase;
@@ -608,7 +629,7 @@ body {
     height: 100px;
     width: 100%;
 }
-.confidence__nav.container {
+.confidence__nav.container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -642,7 +663,7 @@ body {
     background: -o-linear-gradient(bottom, #b01f5b, #df4a4a);
     background: linear-gradient(to top, #b01f5b, #df4a4a);
 }
-.map.container {
+.map.container-fluid {
    /* max-width: 1300px;
     display: flex;
     flex-direction: column;*/
@@ -668,7 +689,7 @@ ymaps.ymaps-2-1-68-controls__bottom {
 }
 /* карта конец */
 /* футер старт */
-.footer.container{
+.footer.container-fluid{
     background-color: #454545;
     color: #ffffff;
     /*max-width: 1300px;
@@ -690,18 +711,19 @@ ymaps.ymaps-2-1-68-controls__bottom {
     width: 184px;
 }
 .footer__contacts {
-    background: url(/img/phone.png) no-repeat left 1.6em / 9%, url(/img/watsup.png) no-repeat left 4.5em/ 9%, url(/img/vk-icon.png) no-repeat 2em 6.5em/ 14%, url(/img/fb-icon.png) no-repeat 5em 6.5em/ 14%, url(/img/inst-icon.png) no-repeat 8em 6.5em/ 14%;
+    background: url(/img/phone.png) no-repeat left 1.6em / 1rem, url(/img/watsup.png) no-repeat left 4.5em/ 1rem, url(/img/vk-icon.png) no-repeat 2em 6.5em/ 1rem, url(/img/fb-icon.png) no-repeat 5em 6.5em/ 1rem, url(/img/inst-icon.png) no-repeat 8em 6.5em/ 1rem;
     font-family: OpenSans-SemiBold;
     font-size: .7em;
     height: 103px;
+    width: 100%;
 }
 .footer__address {
-    background: url(/img/place.png) no-repeat 0rem 1.5rem / 8%, url(/img/mail.png) no-repeat -0rem 4.2rem / 13%;
+    background: url(/img/place.png) no-repeat 0rem 1.5rem / 1rem, url(/img/mail.png) no-repeat 0rem 3.3rem / 1rem;
     padding-top: 1.2rem;
     font-family: OpenSans-Regular;
     font-size: .7em;
-    margin-left: 57px;
     height: 76px;
+    width: 100%;
 }
 .footer__address p:nth-of-type(1) {
     text-align: left;
@@ -754,3 +776,10 @@ ymaps.ymaps-2-1-68-controls__bottom {
     padding-left: 2.8rem;
 }
 /* футер конец */
+
+
+@media (max-width: 925px){
+    .footer__contacts{
+    font-size: .6em;
+    }
+}

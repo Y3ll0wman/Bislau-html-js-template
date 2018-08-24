@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--хэдер-->
-<div class="header-wrapper container">
+<div class="header-wrapper container-fluid">
     <!--<div class="header container">-->
     <div class="header-row row">
             <div class="header__logo col-md-4">
@@ -47,11 +47,17 @@
     </div>
         <!--</div>-->
 </div>
-<div class="content-wrapper container">
+<div class="content-wrapper container-fluid">
 <!--первый блок/кнопки выбора табличек или металлаконструкций-->
     <div class="navigation row">
-        <div id="navigation__tablets" class="navigation__tablets"><h3>Таблички</h3></div>
-        <div id="navigation__metalStructures" class="navigation__metalStructures"><h3>Металлоконструкции</h3></div>
+        <div id="navigation__tablets" class="navigation__tablets">
+            <h3>Таблички</h3>
+            <div class="navigation__tablets__line"></div>
+        </div>
+        <div id="navigation__metalStructures" class="navigation__metalStructures">
+            <h3>Металлоконструкции</h3>
+            <div class="navigation__metalStructures__line"></div>
+        </div>
     </div>
 <!--второй блок/карточки табличек-->
     <div class="tabletsCards row">
@@ -173,7 +179,7 @@
     </div>
 </div>
 <!--третий блок/компания Бислу-->
-<div class="aboutUs container">
+<div class="aboutUs container-fluid">
     <div class="aboutUs__H1-wrapper">
         <div class="aboutUs__H1"><h3>КОМПАНИЯ БИСЛАУ</h3></div>
         <div class="aboutUs__H2"><h4>С вами 15 лет!</h4></div>
@@ -196,30 +202,30 @@
     </div>
 </div>
 <!--четвертый блок/доверие клиентов-->
-<div class="confidence container">
+<div class="confidence container-fluid">
     <div class="confidence__H1"><h3>мы ценим доверие наших клиентов</h3></div>
     <div class="confidence__line"></div>
-<div class="confidence__icons container">
+<div class="confidence__icons container-fluid">
     <div class="confidence__icons__item1"></div>
     <div class="confidence__icons__item2"></div>
     <div class="confidence__icons__item3"></div>
     <div class="confidence__icons__item4"></div>
     <div class="confidence__icons__item5"></div>
 </div>
-<div class="confidence__nav container">
+<div class="confidence__nav container-fluid">
     <div class="confidence__nav__item"></div>
     <div class="confidence__nav__item"></div>
 </div>
 </div>
 <!--пятый блок/карта-->
-<div class="map container">
+<div class="map container-fluid">
     <div class="map__top-border row"></div>
     <div class="row">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3679590d8ed7323f2eab8dfb65c5a233871db611b86c4217162495ffe136f4fc&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
 </div>
 <!--шестой блок/футер-->
-<div class="footer container">
+<div class="footer container-fluid">
     <div class="footer-row row">
         <div class="footer__logo col-md-4">
             <div class="footer__logo__img"></div>
@@ -231,19 +237,20 @@
             <a href="#">Информация</a>
             <a href="#">Контакты</a>
         </div>
-        <div class="footer__address-wrapper col-md-2">
-            <div class="footer__address">
-                <p>СПб, ул. Рубежная, 3 ул. Савушкина, 16 </p>
+        <!--    <div class="footer__address-wrapper col-md-2"> -->
+            <div class="footer__address col-md-2">
+                <p>СПб, ул. Рубежная, 3 ул.
+                    <br>Савушкина, 16 </p>
                 <p>9293343@mail.ru</p>
-            </div>
-        </div>
-        <div class="footer__contacts-wrapper col-md-2">
-            <div class="footer__contacts">
+                <!--   </div> -->
+              </div>
+             <!-- <div class="footer__contacts-wrapper col-md-2"> -->
+            <div class="footer__contacts col-md-2">
                 <p>+7 (812) 929-33-43</p>
                 <p>+7 (812) 647-64-40</p>
                 <p>+7 (911) 284 33 43</p>
             </div>
-        </div>
+        <!--</div>-->
     </div>
     <div class="footer-row2 row">
         <div>
