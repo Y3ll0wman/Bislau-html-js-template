@@ -1,5 +1,5 @@
 /* сброс стилей браузера */
-* { box-sizing: border-box; }
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
@@ -82,9 +82,13 @@ body {
     /*width: 1300px;*/
 }
 .header.container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .header__logo, .footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 1.4rem;
     margin-right: -45px;
@@ -108,13 +112,18 @@ body {
     text-transform: uppercase;
     font-family: OpenSans-Regular;
     font-size: .7em;
-    transform: translateY(-.5em);
+    -webkit-transform: translateY(-.5em);
+        -ms-transform: translateY(-.5em);
+            transform: translateY(-.5em);
 }
 .header__search-wrapper {
     width: 70px;
     height: 70px;
 }
 .header__search {
+    background: url(/img/search.png) no-repeat center center / 22%, -webkit-gradient(linear, left bottom, left top, from(#dd9b07), to(#fbc024));
+    background: url(/img/search.png) no-repeat center center / 22%, -webkit-linear-gradient(bottom, #dd9b07, #fbc024);
+    background: url(/img/search.png) no-repeat center center / 22%, -o-linear-gradient(bottom, #dd9b07, #fbc024);
     background: url(/img/search.png) no-repeat center center / 22%, linear-gradient(to top, #dd9b07, #fbc024);
     width: 70px;
     height: 70px;
@@ -164,6 +173,9 @@ body {
     padding-top: 7px;
 }
 .header__feedback {
+    background: url(/img/mail__header.png) no-repeat 1.3rem center / 18%, -webkit-gradient(linear, left bottom, left top, from(#dd9b07), to(#fbc024));
+    background: url(/img/mail__header.png) no-repeat 1.3rem center / 18%, -webkit-linear-gradient(bottom, #dd9b07, #fbc024);
+    background: url(/img/mail__header.png) no-repeat 1.3rem center / 18%, -o-linear-gradient(bottom, #dd9b07, #fbc024);
     background: url(/img/mail__header.png) no-repeat 1.3rem center / 18%, linear-gradient(to top, #dd9b07, #fbc024);
     color: #000000;
     border-radius: 4px;
@@ -207,6 +219,9 @@ body {
     text-transform: uppercase;
 }
 .cards-btn {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ae2364), to(#db4d53));
+    background: -webkit-linear-gradient(bottom, #ae2364, #db4d53);
+    background: -o-linear-gradient(bottom, #ae2364, #db4d53);
     background: linear-gradient(to top, #ae2364, #db4d53);
     color: #ffffff;
     font-family: MullerRegular;
@@ -224,19 +239,33 @@ body {
     width: 21%;
     margin: .6rem;
     margin-left: 1%;
-    box-shadow: 0px 0px 7px 3px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,.1);
+            box-shadow: 0px 0px 7px 3px rgba(0,0,0,.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .tabletsCards__item:hover, .metalStructuresCards__item:hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 .tabletsCards__icon__effect1, .tabletsCards__icon__effect1, .tabletsCards__icon__effect2, .tabletsCards__icon__effect3, .tabletsCards__icon__effect4, .tabletsCards__icon__effect5, .tabletsCards__icon__effect6, .tabletsCards__icon__effect7, .tabletsCards__icon__effect8 {
     display: none;
     background-color: rgba(0, 0, 0, 0.56);
     height: 159px;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 .tabletsCards__item p, .metalStructuresCards p {
     font-family: OpenSans-Light;
@@ -257,96 +286,165 @@ body {
     font-family: OpenSans-Regular;
 }
 .tabletsCards__item1__icon {
+    background: url(/img/tablets-icon1.png) no-repeat center center / 50%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon1.png) no-repeat center center / 50%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon1.png) no-repeat center center / 50%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon1.png) no-repeat center center / 50%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item2__icon {
+    background: url(/img/tablets-icon2.png) no-repeat center center / 50%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon2.png) no-repeat center center / 50%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon2.png) no-repeat center center / 50%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon2.png) no-repeat center center / 50%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item3__icon {
+    background: url(/img/tablets-icon3.png) no-repeat center center / 31%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon3.png) no-repeat center center / 31%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon3.png) no-repeat center center / 31%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon3.png) no-repeat center center / 31%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item4__icon {
+    background: url(/img/tablets-icon4.png) no-repeat center center / 31%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon4.png) no-repeat center center / 31%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon4.png) no-repeat center center / 31%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon4.png) no-repeat center center / 31%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item5__icon {
+    background: url(/img/tablets-icon5.png) no-repeat center center / 11%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon5.png) no-repeat center center / 11%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon5.png) no-repeat center center / 11%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon5.png) no-repeat center center / 11%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item6__icon {
+    background: url(/img/tablets-icon6.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon6.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon6.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon6.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item7__icon {
+    background: url(/img/tablets-icon7.png) no-repeat center center / 31%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon7.png) no-repeat center center / 31%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon7.png) no-repeat center center / 31%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon7.png) no-repeat center center / 31%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item8__icon {
+    background: url(/img/tablets-icon8.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon8.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon8.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon8.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item1__icon{
+    background: url(/img/metalStructures-icon1.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/metalStructures-icon1.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/metalStructures-icon1.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/metalStructures-icon1.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item2__icon {
+    background: url(/img/metalStructures-icon2.png) no-repeat center center / 39%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/metalStructures-icon2.png) no-repeat center center / 39%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/metalStructures-icon2.png) no-repeat center center / 39%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/metalStructures-icon2.png) no-repeat center center / 39%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item3__icon{
+    background: url(/img/metalStructures-icon3.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/metalStructures-icon3.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/metalStructures-icon3.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/metalStructures-icon3.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item4__icon{
+    background: url(/img/metalStructures-icon4.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/metalStructures-icon4.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/metalStructures-icon4.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/metalStructures-icon4.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item5__icon{
+    background: url(/img/metalStructures-icon5.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/metalStructures-icon5.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/metalStructures-icon5.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/metalStructures-icon5.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item6__icon{
+    background: url(/img/tablets-icon3.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon3.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon3.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon3.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item7__icon{
+    background: url(/img/tablets-icon1.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon1.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon1.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon1.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .metalStructuresCards__item8__icon{
+    background: url(/img/tablets-icon4.png) no-repeat center center / 30%, -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), to(#f7f7f7));
+    background: url(/img/tablets-icon4.png) no-repeat center center / 30%, -webkit-linear-gradient(bottom, #d9d9d9, #f7f7f7);
+    background: url(/img/tablets-icon4.png) no-repeat center center / 30%, -o-linear-gradient(bottom, #d9d9d9, #f7f7f7);
     background: url(/img/tablets-icon4.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
     height: 159px;
 }
 .tabletsCards__item__line {
     height: 4px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#c05a8f), to(#d54756));
+    background: -webkit-linear-gradient(bottom, #c05a8f, #d54756);
+    background: -o-linear-gradient(bottom, #c05a8f, #d54756);
     background: linear-gradient(to top, #c05a8f, #d54756);
 }
 .navigation__tablets {
     background: url(/img/tablets-nav.png) no-repeat 1rem 1rem/ 95%;
     width: 50%;
     background-color: #ffffff;
-    box-shadow: 0px -4px 3px 2px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px -4px 3px 2px rgba(0,0,0,.1);
+            box-shadow: 0px -4px 3px 2px rgba(0,0,0,.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .navigation__metalStructures {
     background: url(/img/metall-nav.png) no-repeat left 1rem/ 95%;
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .tabletsCards, .metalStructuresCards {
     background-color: #ffffff;
-    box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
+            box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .tabletsCards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .metalStructuresCards{
@@ -357,13 +455,21 @@ body {
 .aboutUs.container {
     background-color: #ffffff;
     width: 66rem;
-    box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
+            box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
     margin-bottom: 2rem;
 }
 .aboutUs__H1-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .aboutUs__H1 {
     padding-top: 2rem;
@@ -386,9 +492,16 @@ body {
     margin-right: 3rem;
 }
 .aboutUs__icons.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 2rem;
     font-family: OpenSans-Regular;
     font-size: .8em;
@@ -437,9 +550,16 @@ body {
 /* о компании конец */
 /* доверие клиентов старт */
 .confidence.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .confidence__H1 {
     text-transform: uppercase;
@@ -454,8 +574,13 @@ body {
     margin-bottom: 1rem;
 }
 .confidence__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-bottom: 1rem;
 }
 .confidence__icons__item1{
@@ -484,9 +609,16 @@ body {
     width: 100%;
 }
 .confidence__nav.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 2rem;
 }
 .confidence__nav div:nth-of-type(1) {
@@ -505,6 +637,9 @@ body {
 /* карта старт */
 .map__top-border.row {
     height: 4px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#b01f5b), to(#df4a4a));
+    background: -webkit-linear-gradient(bottom, #b01f5b, #df4a4a);
+    background: -o-linear-gradient(bottom, #b01f5b, #df4a4a);
     background: linear-gradient(to top, #b01f5b, #df4a4a);
 }
 .map.container {
@@ -584,7 +719,9 @@ ymaps.ymaps-2-1-68-controls__bottom {
     padding-top: 8px;
 }
 .footer-row2 {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: #303030;
     font-family: OpenSans-Regular;
     font-size: .8em;
@@ -599,9 +736,16 @@ ymaps.ymaps-2-1-68-controls__bottom {
     padding-top: 1.5rem;
     font-family: OpenSans-Regular;
     font-size: .8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .footer__nav1 a:nth-of-type(1), a:nth-of-type(2) {
     padding-right: 1rem;
