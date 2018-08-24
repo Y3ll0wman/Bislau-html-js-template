@@ -44,6 +44,10 @@ body {
 /* общие стили конец */
 /* шрифты старт */
 @font-face {
+    font-family: 'OpenSans-Light';
+    src: url('/fonts/OpenSans-Light.ttf');
+}
+@font-face {
     font-family: 'OpenSans-Regular';
     src: url('/fonts/OpenSans-Regular.ttf');
 }
@@ -59,19 +63,23 @@ body {
     font-family: 'MullerRegular';
     src: url('/fonts/MullerRegular.otf');
 }
+@font-face {
+    font-family: 'MullerMedium';
+    src: url('/fonts/MullerMedium.otf');
+}
 /* шрифты конец */
 /* хэдер старт */
-.header-wrapper.container{
-    display: flex;
-    flex-wrap: nowrap;
-    max-width: 1300px;
+.header-wrapper.container {
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* max-width: 1300px; */
     background-color: #454545;
     color: #ffffff;
-    width: 100%;
+    /* width: 100%; */
     height: 70px;
 }
 .header-row, .footer-row{
-    width: 1300px;
+    /*width: 1300px;*/
 }
 .header.container{
     display: flex;
@@ -181,6 +189,170 @@ body {
     margin-left: 20px;
 }
 /* хэдер конец */
+/* навигация/табы */
+.content-wrapper.container {
+   margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.content-wrapper {
+    width: 66rem;
+}
+.metalStructuresCards{
+    display: none;
+}
+.navigation.row {
+    height: 154px;
+    font-family: MullerMedium;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+.cards-btn {
+    background: linear-gradient(to top, #ae2364, #db4d53);
+    color: #ffffff;
+    font-family: MullerRegular;
+    font-size: .9em;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 0px solid #c43d64;
+    width: 86%;
+    height: 15%;
+    margin-left: 8%;
+    margin-bottom: 1rem;
+}
+.tabletsCards__item, .metalStructuresCards__item {
+    width: 21%;
+    margin: .6rem;
+    margin-left: 1%;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+}
+.tabletsCards__item:hover, .metalStructuresCards__item:hover {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.tabletsCards__icon__effect1, .tabletsCards__icon__effect1, .tabletsCards__icon__effect2, .tabletsCards__icon__effect3, .tabletsCards__icon__effect4, .tabletsCards__icon__effect5, .tabletsCards__icon__effect6, .tabletsCards__icon__effect7, .tabletsCards__icon__effect8 {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.56);
+    height: 159px;
+    flex-direction: column-reverse;
+}
+.tabletsCards__item p, .metalStructuresCards p {
+    font-family: OpenSans-Light;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: .4rem;
+    padding-bottom: 0.4rem;
+}
+.navigation__metalStructures, .navigation__tablets {
+    cursor: pointer;
+}
+.tabletsCards__icon__effect2 p {
+    color: #ffffff;
+    text-align: left;
+    padding: .5rem;
+    font-size: .7em;
+    font-family: OpenSans-Regular;
+}
+.tabletsCards__item1__icon {
+    background: url(/img/tablets-icon1.png) no-repeat center center / 50%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item2__icon {
+    background: url(/img/tablets-icon2.png) no-repeat center center / 50%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item3__icon {
+    background: url(/img/tablets-icon3.png) no-repeat center center / 31%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item4__icon {
+    background: url(/img/tablets-icon4.png) no-repeat center center / 31%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item5__icon {
+    background: url(/img/tablets-icon5.png) no-repeat center center / 11%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item6__icon {
+    background: url(/img/tablets-icon6.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item7__icon {
+    background: url(/img/tablets-icon7.png) no-repeat center center / 31%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item8__icon {
+    background: url(/img/tablets-icon8.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item1__icon{
+    background: url(/img/metalStructures-icon1.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item2__icon {
+    background: url(/img/metalStructures-icon2.png) no-repeat center center / 39%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item3__icon{
+    background: url(/img/metalStructures-icon3.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item4__icon{
+    background: url(/img/metalStructures-icon4.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item5__icon{
+    background: url(/img/metalStructures-icon5.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item6__icon{
+    background: url(/img/tablets-icon3.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item7__icon{
+    background: url(/img/tablets-icon1.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.metalStructuresCards__item8__icon{
+    background: url(/img/tablets-icon4.png) no-repeat center center / 30%, linear-gradient(to top, #d9d9d9, #f7f7f7);
+    height: 159px;
+}
+.tabletsCards__item__line {
+    height: 4px;
+    background: linear-gradient(to top, #c05a8f, #d54756);
+}
+.navigation__tablets {
+    background: url(/img/tablets-nav.png) no-repeat 1rem 1rem/ 95%;
+    width: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px -4px 3px 2px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation__metalStructures {
+    background: url(/img/metall-nav.png) no-repeat left 1rem/ 95%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabletsCards, .metalStructuresCards {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,.1);
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tabletsCards{
+    display: flex;
+}
+.metalStructuresCards{
+    display: none;
+}
+/* навигация/табы конец */
 /* о компании старт */
 .aboutUs.container {
     background-color: #ffffff;
@@ -336,9 +508,9 @@ body {
     background: linear-gradient(to top, #b01f5b, #df4a4a);
 }
 .map.container {
-    max-width: 1300px;
+   /* max-width: 1300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 ymaps.ymaps-2-1-68-controls__toolbar_left {
     display: none;
@@ -362,16 +534,16 @@ ymaps.ymaps-2-1-68-controls__bottom {
 /* карта конец */
 /* футер старт */
 .footer.container{
-    max-width: 1300px;
     background-color: #454545;
     color: #ffffff;
+    /*max-width: 1300px;
     width: 100%;
-    height: 103px;
+    height: 103px;*/
 }
 .footer-row {
-    width: 1300px;
+    /*width: 1300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 .footer__nav1 a:hover {
     color: #D74B4B;
@@ -389,7 +561,7 @@ ymaps.ymaps-2-1-68-controls__bottom {
     height: 103px;
 }
 .footer__address {
-    background: url(/img/place.png) no-repeat 0rem 1.4rem / 8%, url(/img/mail.png) no-repeat -0rem 3.4rem / 13%;
+    background: url(/img/place.png) no-repeat 0rem 1.5rem / 8%, url(/img/mail.png) no-repeat -0rem 4.2rem / 13%;
     padding-top: 1.2rem;
     font-family: OpenSans-Regular;
     font-size: .7em;
@@ -398,21 +570,12 @@ ymaps.ymaps-2-1-68-controls__bottom {
 }
 .footer__address p:nth-of-type(1) {
     text-align: left;
-    padding-left: 1rem;
-}
-.footer__address p:nth-of-type(2) {
-    text-align: left;
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-.footer__address p:nth-of-type(1) {
-    text-align: left;
-    padding-left: 1.1rem;
+    padding-left: 1.2rem;
 }
 .footer__address p:nth-of-type(2) {
     text-align: left;
     padding-top: .4rem;
-    padding-left: 1.2rem;
+    padding-left: 1.3rem;
 }
 .footer__contacts p:nth-of-type(1){
     padding-top: 17px;
@@ -436,9 +599,12 @@ ymaps.ymaps-2-1-68-controls__bottom {
     padding-top: 1.5rem;
     font-family: OpenSans-Regular;
     font-size: .8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .footer__nav1 a:nth-of-type(1), a:nth-of-type(2) {
-    padding-right: 5rem;
+    padding-right: 1rem;
 }
 .footer__contacts-wrapper {
     padding-left: 2.8rem;
