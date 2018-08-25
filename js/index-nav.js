@@ -19,6 +19,12 @@ $( document ).ready(function() {
         $(".navigation__tablets__line").css("display", "block");
         $(".navigation__metalStructures__line").css("display", "none");
     });
+    $('.header__search-wrapper').mouseover(function(){
+        $(".search-form").css("display", "flex");
+    });
+    $('.header__search-wrapper').mouseout(function(){
+        $(".search-form").css("display", "none");
+    });
     $('.tabletsCards__item1__icon').mouseover(function(){
         $(".tabletsCards__icon__effect1").css("display", "flex");
     });
