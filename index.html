@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="js" href="js/bootstrap.min.js">
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index-nav.js"></script>
     <title>ИЗГОТОВЛЕНИЕ ТАБЛИЧЕК и УКАЗАТЕЛЕЙ - БИСЛАУ</title>
@@ -24,10 +24,7 @@
                 <div class="header__search-wrapper col-xl-1">
                     <div class="header__search"></div>
                     <form role="search" method="get" class="search-form"">
-                        <label>
-                            <span class="screen-reader-text">Найти:</span>
-                            <input type="search" class="search-field" placeholder="Поиск…" value="" name="s">
-                        </label>
+                        <input type="search" class="search-field" placeholder="Поиск…" value="" name="s">
                         <input type="submit" class="search-submit" value="Поиск">
                     </form>
                 </div>
@@ -60,18 +57,22 @@
 <div class="content-wrapper container-fluid">
 <!--первый блок/кнопки выбора табличек или металлаконструкций-->
     <div class="navigation row col-xl-10 offset-xl-1">
-        <div id="navigation__tablets" class="navigation__tablets">
-            <h3>Таблички</h3>
+        <div id="navigation__tablets" class="navigation__tablets__wrapper">
+            <div class="navigation__tablets">
+                <h3>Таблички</h3>
+            </div>
             <div class="navigation__tablets__line"></div>
         </div>
-        <div id="navigation__metalStructures" class="navigation__metalStructures">
-            <h3>Металлоконструкции</h3>
-            <div class="navigation__metalStructures__line"></div>
+        <div id="navigation__metalStructures" class="navigation__metalStructures__wrapper">
+            <div class="navigation__metalStructures">
+                <h3>Металлоконструкции</h3>
+                <div class="navigation__metalStructures__line"></div>
+            </div>
         </div>
     </div>
 <!--второй блок/карточки табличек-->
     <div class="tabletsCards row col-xl-10 offset-xl-1">
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item1">
             <div class="tabletsCards__item1__icon">
                 <div class="tabletsCards__icon__effect1">
                     <button class="cards-btn">подробнее</button>
@@ -80,7 +81,7 @@
             <div class="tabletsCards__item__line"></div>
             <p>Инженерно-технические (координатные) таблички</p>
         </div>
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item2">
             <div class="tabletsCards__item2__icon">
                 <div class="tabletsCards__icon__effect2">
                     <button class="cards-btn">подробнее</button>
@@ -90,7 +91,7 @@
             <div class="tabletsCards__item__line"></div>
             <p>Адресные указатели</p>
         </div>
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item3">
             <div class="tabletsCards__item3__icon">
                 <div class="tabletsCards__icon__effect3">
                     <button class="cards-btn">подробнее</button>
@@ -99,7 +100,7 @@
             <div class="tabletsCards__item__line"></div>
             <p>Схемы, планы, стенды</p>
         </div>
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item4">
             <div class="tabletsCards__item4__icon">
                 <div class="tabletsCards__icon__effect4">
                     <button class="cards-btn">подробнее</button>
@@ -108,7 +109,7 @@
             <div class="tabletsCards__item__line"></div>
             <p>Навигационные указатели</p>
         </div>
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item5">
             <div class="tabletsCards__item5__icon">
                 <div class="tabletsCards__icon__effect5">
                     <button class="cards-btn">подробнее</button>
@@ -117,7 +118,7 @@
             <div class="tabletsCards__item__line"></div>
             <p>Дорожные знаки</p>
         </div>
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item6">
             <div class="tabletsCards__item6__icon">
                 <div class="tabletsCards__icon__effect6">
                     <button class="cards-btn">подробнее</button>
@@ -126,7 +127,7 @@
             <div class="tabletsCards__item__line"></div>
             <p>Знаки безопасности</p>
         </div>
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item7">
             <div class="tabletsCards__item7__icon">
                 <div class="tabletsCards__icon__effect7">
                     <button class="cards-btn">подробнее</button>
@@ -135,7 +136,7 @@
             <div class="tabletsCards__item__line"></div>
             <p>Схемы, планы, стенды</p>
         </div>
-        <div class="tabletsCards__item">
+        <div class="tabletsCards__item8">
             <div class="tabletsCards__item8__icon">
                 <div class="tabletsCards__icon__effect8">
                     <button class="cards-btn">подробнее</button>
