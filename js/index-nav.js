@@ -67,4 +67,27 @@ $( document ).ready(function() {
     $('.tabletsCards__item8').mouseout(function(){
         $(".tabletsCards__icon__effect8").css("display", "none");
     });
+    $('.sb-search').click(function(){
+        $(".sb-search.sb-search-open, .no-js .sb-search").css("width", "100%");
+        $(".header__logo__line, .header__logo__text").css("display", "none");
+        $(".header__logo__img").css("margin-right", "0");
+        $(".header__logo").removeClass("col-xl-3");
+        $(".header__logo").addClass("col-xl-1");
+        $(".sb-search-wrapper").removeClass(" col-xl-1");
+        $(".sb-search-wrapper").addClass("col-xl-3");
+    });
+        $(document).mouseup(function (e){ // событие клика по веб-документу
+            var div = $("#sb-search"); // тут указываем ID элемента
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0) { // и не по его дочерним элементам
+                $(".header__logo__line, .header__logo__text").css("display", "block");
+                $(".header__logo__img").css("margin-right", "13px");
+                $(".header__logo").removeClass("col-xl-1");
+                $(".header__logo").addClass("col-xl-3");
+                $(".sb-search-wrapper").removeClass("col-xl-3");
+                $(".sb-search-wrapper").addClass("col-xl-1");
+                $(".sb-search.sb-search-open, .no-js .sb-search").css("width", "0");
+                $(".sb-search").css("width", "70px"); // выполняем чтонибудь
+            }
+    });
 });

@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/index-nav.js"></script>
+    <script src="js/modernizr.custom.js"></script>
     <title>ИЗГОТОВЛЕНИЕ ТАБЛИЧЕК и УКАЗАТЕЛЕЙ - БИСЛАУ</title>
 </head>
 <body>
@@ -21,15 +24,30 @@
                 <div class="header__logo__line"></div>
                 <div class="header__logo__text"><p>Производство металлоконструкций, табличек</p></div>
             </div>
-                <div class="header__search-wrapper col-xl-1">
+               <!-- <div class="header__search-wrapper col-xl-1">
                     <div class="header__search"></div>
                     <form role="search" method="get" class="search-form"">
                         <input type="search" class="search-field" placeholder="Поиск…" value="" name="s">
                         <input type="submit" class="search-submit" value="Поиск">
                     </form>
                 </div>
+                -->
+            <div class="sb-search-wrapper col-xl-1">
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="Поиск" type="text" value="" name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"></span>
+                    </form>
+                </div>
 
-            <div class="header__address-wrapper col-xl-2">
+                <script src="js/classie.js"></script>
+                <script src="js/uisearch.js"></script>
+                <script>
+                    new UISearch( document.getElementById( 'sb-search' ) );
+                </script>
+            </div>
+                <div class="header__address-wrapper col-xl-2">
                 <div class="header__address">
                     <p>СПб, ул. Рубежная, 3
                         <br>ул. Савушкина, 16</p>
