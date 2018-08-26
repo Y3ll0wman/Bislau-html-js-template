@@ -120,6 +120,12 @@ body {
 .header__search-wrapper {
     height: 70px;
 }
+.sb-icon-search:hover{
+    background: url(/img/search.png) no-repeat center center / 22%, -webkit-gradient(linear, left bottom, left top, from(#fbc024), to(#dd9b07));
+    background: url(/img/search.png) no-repeat center center / 22%, -webkit-linear-gradient(bottom, #fbc024, #dd9b07);
+    background: url(/img/search.png) no-repeat center center / 22%, -o-linear-gradient(bottom, #fbc024, #dd9b07);
+    background: url(/img/search.png) no-repeat center center / 22%, linear-gradient(to top, #fbc024, #dd9b07);
+}
 .header__search {
     background: url(/img/search.png) no-repeat center center / 22%, -webkit-gradient(linear, left bottom, left top, from(#dd9b07), to(#fbc024));
     background: url(/img/search.png) no-repeat center center / 22%, -webkit-linear-gradient(bottom, #dd9b07, #fbc024);
